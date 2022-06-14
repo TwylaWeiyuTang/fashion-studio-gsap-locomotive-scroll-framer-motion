@@ -23,8 +23,6 @@ const Title = styled.h1`
     top: 1rem;
     left: 5%;
     z-index: 5;
-
-
 `
 const Left = styled.div`
     font-size: ${props => props.theme.fontlg};
