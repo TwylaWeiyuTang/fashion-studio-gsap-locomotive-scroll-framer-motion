@@ -12,6 +12,11 @@ const Container = styled.div`
     color: ${props=> props.theme.text};
     z-index: 5;
 
+    a{
+        display: flex;
+        align-items: flex-end;
+    }
+
     svg {
         width: 4rem;
         height: auto;
@@ -27,7 +32,12 @@ const Container = styled.div`
     }
 `
 
-const pathVariants = 
+const Text = styled(motion.span)`
+    font-size: ${props => props.theme.fontlg};
+    color: ${props => props.theme.text};
+    padding-bottom: 0.5rem;
+`
+
 const Logo = () => {
   return (
     <Container>
@@ -47,6 +57,22 @@ const Logo = () => {
                 ease: 'easeInOut'
             }}
             d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+            <Text initial={{
+                opacity: 0,
+                x: -50
+            }}
+            animate={{
+                opacity: 1,
+                x: -5
+            }}
+            transition={{
+                duration: 2,
+                delay: 2,
+                ease: 'easeInOut'
+            }}
+            >
+                Wibe Studio
+            </Text>
         </Link>
     </Container>
   )
