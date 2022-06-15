@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: 'Sirin Stencil', cursive;
+        font-family: 'Roboto Condensed', sans-serif;
         overflow-x: hidden;
     }
     

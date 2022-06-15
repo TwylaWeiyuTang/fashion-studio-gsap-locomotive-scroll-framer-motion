@@ -10,6 +10,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css'
 import { AnimatePresence } from 'framer-motion';
 import Shop from './Sections/Shop';
 import ScrollTriggerProxy from './components/ScrollTriggerProxy';
+import Banner from './Sections/Banner';
 
 function App() {
   const containerRef = useRef(null)
@@ -40,6 +41,7 @@ function App() {
           <Home />
           <About />
           <Shop />
+          <Banner />
           </main>
         </AnimatePresence>
       </LocomotiveScrollProvider>
