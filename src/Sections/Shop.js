@@ -141,7 +141,7 @@ const Shop = () => {
                     scroller: '.App', // locomotive element
                     scrub: true,
                     pin: true,
-                    markers: true
+                    // markers: true
                 },
                 // we need to increase the scrolling height of this element same as scrolling width
                 height: `${scrollingElement.scrollWidth}px`,
@@ -156,7 +156,7 @@ const Shop = () => {
                     end: pinWrapWidth,
                     scroller: '.App', // locomotive element
                     scrub: true,
-                    markers: true
+                    // markers: true
                 },
                 // we need to increase the scrolling height of this element same as scrolling width
                 x: -pinWrapWidth,
@@ -167,7 +167,9 @@ const Shop = () => {
         }, 1000)
 
         return () => {
-
+            // Let's clear instances
+            tl.kill()
+            ScrollTrigger.kill()
         }
     })
   return (
