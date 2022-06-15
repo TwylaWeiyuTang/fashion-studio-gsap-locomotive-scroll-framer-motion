@@ -31,7 +31,7 @@ const Section = styled.section`
 
 const Title = styled.h1`
     font-size: ${props => props.theme.fontxxxl};
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
 
     text-shadow: 1px 1px 1px ${props => props.theme.body};
@@ -173,7 +173,7 @@ const Shop = () => {
         }
     })
   return (
-    <Section ref={ref}>
+    <Section ref={ref} id='shop'>
         <Title data-scroll data-scroll-speedd="-1">New Collection</Title>
         <Left>
             <p>
